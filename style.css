@@ -1,39 +1,12 @@
-/*Arquivo CSS da aula de Desenvolvimento para Internet - Unipar 2025*/
-/*Reset CSS: Importante para zerar todos os esilos já aplicados*/
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
-/*Variáveis*/
-/*Posso salvar nas variáveis, configurações que podem ser usadas globalmente no CSS*/
-:root{
-    --primary-color:purple;
-    --font-sixe:12px;
-}
-
-/*Componentes*/
-/*O que são componentes: Botões, Formulários, Input's, select's, etc...*/
-button{
-    background-color: var(--primary-color); /*usando variáveis*/
-    font-size: var(--font-size);
-    color: azure;
-    padding: 2%;
-    height: 10%;
-    width: 50%;
-    min-height: 100px;
-    max-width: 500px;
-}
 /* Reset básico para padronizar os estilos entre navegadores */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
-  
-  /* Variáveis CSS para reutilização de cores e tamanhos */
+  /* Variáveis css para reutilização de cores e tamanhos */
   :root {
-    --primary: #0057ff;
+    --primary: #17243f;
     --radius: 6px;
   }
   
@@ -45,8 +18,15 @@ button{
     line-height: 1.6;
   }
   
-  /* Container principal com largura máxima e centralizado */
   .container {
+    max-width: 800px; /*largura*/
+    margin: 40px auto; /*espaço externo*/
+    padding: 24px; /*espaço interno*/
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  .container2 {
     max-width: 800px;
     margin: 40px auto;
     padding: 24px;
@@ -55,7 +35,7 @@ button{
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
   }
   
-  /* Cabeçalho com fundo azul e texto branco */
+  /* Cabeçalho com fundo preto e texto branco */
   .header {
     background-color: var(--primary);
     color: #fff;
@@ -83,9 +63,3 @@ button{
     cursor: pointer;
   }
   
-  /* Responsividade para telas pequenas */
-  @media (max-width: 600px) {
-    .container {
-      padding: 12px;
-    }
-  }
